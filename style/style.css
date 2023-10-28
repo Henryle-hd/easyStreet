@@ -6,6 +6,15 @@
     box-sizing: border-box;
     justify-content: space-between;
 }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
 body{
     font-family: 'poppins', sans-serif;
     height: 100vh;
@@ -118,10 +127,7 @@ main{
 @keyframes animateToTop {
     0%{
         transform: translateY(80%);
-        -webkit-transform: translateY(80%);
-        -moz-transform: translateY(80%);
-        -ms-transform: translateY(80%);
-        -o-transform: translateY(80%);
+ 
 }
 100%{
     transform: translateY(0%);
@@ -135,10 +141,6 @@ main{
 }
 100%{
     transform: translateY(-80%);
-    -webkit-transform: translateY(-80%);
-    -moz-transform: translateY(-80%);
-    -ms-transform: translateY(-80%);
-    -o-transform: translateY(-80%);
 }
 }
 /* takeEasy link */
@@ -225,6 +227,31 @@ main{
 }
 25%{
     border-radius: 35% 65% 60% 40% / 40% 60% 30% 70%;
+    }
+    
+}
+
+/* //menu and menu items  */
+
+.menuItems{
+    position: fixed;
+    top: 5em;
+    right: 0;
+    height: auto;
+    background: #fff;
+    padding: 0 2em 3em 4em;
+    z-index: 10000000000000;
+    
+}
+.menuItems li a{
+    padding-top: 3em;
+
+}
+
+/* responsive */
+@media screen and (max-width: 900px) {
+    body{
+        overflow: auto;
     }
     
 }
