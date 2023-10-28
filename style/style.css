@@ -183,7 +183,7 @@ main{
     align-items: center;
     position: relative;
     right: 6em;
-    top: 3em;
+    top: 2.2em;
 }
 .imgbox{
     position: relative;
@@ -191,7 +191,6 @@ main{
     margin-right: -7vw;
 }
 .imgbox img{
-    width: 70%;
-    height: 60%;
+    width: 90%;
 
 }
