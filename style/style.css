@@ -178,11 +178,12 @@ main{
 /* .imgExplanation */
 .imgExplanation{
     display: flex;
-    width: 50%;
+    width: 20%;
     justify-content: center;
     align-items: center;
     position: relative;
-    right: 5em;
+    right: 6em;
+    top: 3em;
 }
 .imgbox{
     position: relative;
@@ -190,7 +191,7 @@ main{
     margin-right: -7vw;
 }
 .imgbox img{
-    width: 100%;
+    width: 70%;
     height: 60%;
 
 }
