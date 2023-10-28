@@ -189,8 +189,39 @@ main{
     position: relative;
     min-width: 40vw;
     margin-right: -7vw;
+    
 }
 .imgbox img{
     width: 90%;
+    
 
+}
+
+/* animblob */
+.animblob{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    height: 40vw;
+    width: 40vw;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    animation: animate_blub 8s linear infinite;
+    z-index: -1;
+}
+
+@keyframes animate_blub {
+    0%,100%{
+        border-radius: 45% 55% 70% 35% / 70% 30% 90% 40%;
+    }
+    25%{
+        border-radius: 50% 45% 30% 35% / 50% 30% 60% 10%;
+    }
+    50%{
+        border-radius: 65% 35% 30% 65% / 40% 60% 30% 70%;
+}
+25%{
+    border-radius: 35% 65% 60% 40% / 40% 60% 30% 70%;
+    }
+    
 }
