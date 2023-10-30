@@ -243,6 +243,8 @@ main{
     position: relative;
     top: -4vw;
     left: 16vw;
+    background-color: transparent;
+    color: #000;
 }
 
 .menuItems{
