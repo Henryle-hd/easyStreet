@@ -15,11 +15,16 @@ a{
 img{
     width: 100%;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'poppins', sans-serif;
     height: 100vh;
     background: linear-gradient(to left, #fd4a2b,#fd4a2a);
+
 }
+
 main{
     width: 100%;
     position: relative;
