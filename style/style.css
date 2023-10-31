@@ -298,6 +298,34 @@ main{
 }
 
 
+/* progress */
+.progress{
+    background-color: #000;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    display: none;
+    place-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #fd4a2b;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+#progresValue{
+    display: block;
+    height: 2vw;
+    width: 2vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 25px;
+    border-radius: 50%;
+}
+
 /* scroll bar  */
 ::-webkit-scrollbar{
     width: 12px;

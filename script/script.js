@@ -27,4 +27,33 @@ const words=document.querySelector('.animatedWord').children,
         words[index].classList.add('currentWord');
     }
        
- window.onload=animateText;
+ //window.onload=animateText;
+
+
+
+//  toTop button action 
+let prograssToTop = ()=>{
+    let scrollProgress=document.getElementById('progress');
+    let progressValue=document.getElementById('progresValue');
+
+    let pos=document.documentElement.scrollTop;
+
+    let calcHeight=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    let scrollValue=Math.round((pos*100)/calcHeight)
+
+    if(scrollValue==130){
+        scrollProgress.style.display="grid";
+    }
+    else{
+        scrollProgress.style.display="none";
+    }
+    
+}
+
+window.onscroll=prograssToTop;
+window.onload=()=>{
+    prograssToTop();
+    animateText();
+}
+
