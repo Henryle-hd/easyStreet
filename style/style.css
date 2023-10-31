@@ -16,7 +16,7 @@ img{
     width: 100%;
 }
 html{
-    scroll-behavior: smooth;
+        scroll-behavior: smooth;
 }
 body{
     font-family: 'poppins', sans-serif;
@@ -331,6 +331,20 @@ main{
     border-radius: 50%;
 }
 
+
+
+/* section two  */
+.section2{
+    height: 100vh;
+    background-color: #000;
+}
+#bg{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 /* scroll bar  */
 ::-webkit-scrollbar{
     width: 12px;
