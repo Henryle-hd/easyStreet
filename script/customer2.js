@@ -1,6 +1,6 @@
 /* ---- particles.js config ---- */
 
-particlesJS("bg",{
+particlesJS("bg2", {
     "particles": {
       "number": {
         "value": 90,
@@ -10,7 +10,7 @@ particlesJS("bg",{
         }
       },
       "color": {
-        "value": "#fd4a2b"
+        "value": "#fff"
       },
       "shape": {
         "type": "circle",
@@ -50,7 +50,7 @@ particlesJS("bg",{
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#fd4a2b",
+        "color": "#fff",
         "opacity": 0.4,
         "width": 1
       },

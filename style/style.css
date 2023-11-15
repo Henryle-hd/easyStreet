@@ -21,7 +21,7 @@ html{
 body{
     font-family: 'poppins', sans-serif;
     height: 100vh;
-    background: linear-gradient(to left, #fd4a2b,#fd4a2a);
+    
 
 }
 
@@ -29,6 +29,7 @@ main{
     width: 100%;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(to left, #fd4a2b,#fd4a2a);
 }
 .header_main nav{
     width: 100%;
@@ -37,7 +38,7 @@ main{
     justify-content: space-between;
     padding: 0.5vw 6vw;
     background: #fd4a2b;
-    z-index: 1000;
+    z-index: 100000000000000000;
     position: fixed;
     box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.1);
 
@@ -198,13 +199,13 @@ main{
 .imgbox{
     position: relative;
     min-width: 40vw;
-    margin-right: -7vw;
+    margin-right: -3vw;
     
 }
 .imgbox img{
     width: 90%;
     position: relative;
-    right: 3.5em;
+    right: 5em;
     
 
 }
@@ -246,10 +247,12 @@ main{
 
 .closeIcon{
     position: relative;
-    top: -4vw;
+    top: -2vw;
     left: 16vw;
-    background-color: transparent;
-    color: #000;
+    background-color: #ac3621;
+    color: #ebe9e9;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .menuItems{
@@ -262,6 +265,14 @@ main{
     padding: 5em 2em 3em 2em;
     transition: 0.3s ease;
     z-index: 10000000000000;
+    background: url('../img/bgMen3.jpg') no-repeat center;
+}
+.menuItems ul{
+    height: 70vh;
+    overflow: scroll;
+}
+.menuItems li {
+    margin-bottom: 4em;
 }
 .menuItems li a{
     color: #fd4a2b;
@@ -278,11 +289,40 @@ main{
     transition: all 0.3s ease;
 }
 
-
+.haveQuestion{
+    height: 10vh;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    border-top: 3px solid rgba(0, 0, 0, 0.082);
+    
+}
+.haveQuestion p{
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+    color: #3d3d3d;
+    position: relative;
+    top: -0.8em;
+}
+.haveQuestion a{
+    font-size: 2em;
+    color: aliceblue;
+    text-transform: capitalize;
+    background-color: #fd4a2b;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+.haveQuestion a:hover{
+    color: #3d3d3d;
+}
+.arrowExplorer{
+    color: #e9dfdd;
+    transform:rotate(-92deg);
+}
 /* explorer */
 .explorer{
-    position: relative;
-    top: -5em;
+    width: 100%;
+    position: absolute;
+    top: 55em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,7 +356,8 @@ main{
     border-radius: 50%;
     color: #fd4a2b;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    cursor: pointer;z-index: 10000000000;
+    
 }
 #progresValue{
     display: block;
@@ -333,18 +374,7 @@ main{
 
 
 
-/* section two  */
-.section2{
-    height: 100vh;
-    background-color: #000;
-}
-#bg{
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
+
 /* scroll bar  */
 ::-webkit-scrollbar{
     width: 12px;
@@ -355,6 +385,344 @@ main{
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to left, rgb(55, 55, 55),#fc3b18);
     border-radius: 50px;
+}
+/* section two  */
+.section2{
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+}
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#bg2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.container{
+    position: absolute;
+    top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3em;
+}
+.containerBox{ 
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border: 1px solid;
+    width: 22vw;
+    padding: 5em;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.boxTitle{
+    color: #fd4a2b;
+    text-shadow: 0 5px 10px rgba(225,225,225,0.2);
+    font-size: 2vw;
+}
+.containerBox p{
+    letter-spacing: 0.2px;
+    padding: 15px 0;
+    color: #3d3d3d;
+   
+}
+.containerBox:hover{
+    transform: scale(108%);
+    transition: all 0.2s;
+}
+
+.BoxButton{
+    background-color: transparent;
+    position: relative;   
+    top: 1rem; 
+    display: inline-block;
+}
+.BoxButton a{
+    color: #fd4a2b;
+}
+.BoxButton div{
+    width: 2.5vw;
+    height: 5vh;
+    background-color: #223;
+    border-radius: 3em;
+    position: absolute;
+    top: -1em;
+    left: -1em;
+    z-index: -1;
+}
+
+.BoxButton a:hover{
+    color: #fff;
+}
+.BoxButton:hover div{
+    background: rgb(45, 44, 44);
+    width: 10vw;
+    transition: .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all .2s ease-in-out;
+
+}
+
+
+/* easystreetLog */
+.easystreetLog{
+    width: 10vw;
+    position: absolute;
+    z-index: 1;
+    top: 115em;
+   right: 50em;
+}
+
+/* percent */
+
+.section3{
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    background: linear-gradient(to left,#fc3a1856, rgb(255, 255, 255) 65%);
+    overflow: hidden;
+}
+.percent{ 
+    position: absolute;
+    top: -15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3em;
+}
+.percent div{ 
+
+}
+.percent h2 {
+    color: #fd4a2b;
+    text-shadow: 0 5px 10px rgba(225,225,225,0.2);
+    font-size: 2vw;
+}
+
+.sideOne, .sideTwo{ 
+    position: relative;
+    top: 35em;
+    width: 15vw;
+}
+.sideOne p, .sideTwo p{
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+
+}
+.sideOne h3{
+    margin:  1em 0 1em 3em;
+
+}
+
+.sideTwo h3 {
+    margin:  1em 0 1em 0em;
+
+}
+.sideTwo h2{
+    color: #fff;
+}
+.sideOne{
+    left: -25em;
+    text-align: right;
+}
+.sideTwo{
+    right: -25em;
+}
+.centerSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 5em;
+
+}
+.centerSide img{
+width: 50%;
+z-index: 100000000;
+}
+.centerSide h3{
+    position: absolute;
+    top: 50em;
+    color: #3b3b3b;
+}
+
+
+/* section4  */
+.section4{
+    height: 100vh;
+    background-color: #ffffff;
+}
+.wrapperSection4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerSection4{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+.card{
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4);
+}
+
+.card>.row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card> .row >.productIcon{
+    background-color: #223;
+    color: white;
+    border-radius: 50% ;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.card> .row >.description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+.description p{
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+.description h4{
+    text-transform: uppercase;
+}
+
+.section4 input{
+    display: none;
+}
+
+.section4 input:checked +label{
+    width: 600px;
+}
+
+.section4 input:checked +label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    
+}
+.card[for="product1"]{
+    background-image: url('../img/low-poly-brain-design-with-connecting-dots_1048-5757.avif');
+}
+.card[for="product2"]{
+    background-image: url('../img/purple-speech-balloon-design-element_53876-119935.avif');
+}
+.card[for="product3"]{
+    background-image: url('../img/picture-helmet-with-brain-it_1340-34710.avif');
+}
+.card[for="product4"]{
+    background-image: url('../img/human-brain-3d-rendering_23-2150554854.avif');
+}
+.card[for="product5"]{
+    background-image: url('../img/purple-speech-balloon-design-element_53876-119935.avif');
+}
+.card[for="product6"]{
+    background-image: url('../img/picture-helmet-with-brain-it_1340-34710.avif');
+}
+
+
+
+/* //section5  */
+.section5{
+    height: 100vh;
+    background: url('../img/canvas.png') no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.section5MainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    
+}
+ .section5Container{
+ width: 30vw;
+ /* border: 1px solid; */
+ padding: 5vw;
+ /* height: 70vh; */
+}
+.section5Container:hover{
+        transition: .6s cubic-bezier(.28, -0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4);
+}
+.containerTitle:nth-child(1){ 
+    text-align: center;
+}
+.containerTitle> h2{
+    font-size: 3vw;
+    color: #223;
+}
+.containerTitle> h1{
+    color: #fd4a2a;
+    font-size: 3vw;
+}
+.easerDescription{ 
+    text-align: center;
+}
+.easerDescription .bradingIcon{
+    font-size: 10em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fc3b18;
+
+}
+.easerDescription h2{
+    font-size: 1.5vw;
+    margin: 0.9em;
+    color: rgba(34, 34, 51, 0.898);
+}
+.brandingList p{ 
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1vw;
+    color: rgba(34, 34, 51, 0.749);
+
+}
+.brandingList p:hover{
+    color: #fd4a2b;
 }
 /* responsive */
 @media screen and (max-width: 900px) {
